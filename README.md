@@ -42,6 +42,24 @@ export FLASK_APP=manage.py
 flask run
 ```
 
+Для отладки в браузере включаем режим
+```
+export FLASK_DEBUG=1
+```
+
+Для отладки отправки email сообщений
+```
+python -m smtpd -n -c DebuggingServer localhost:8025
+```
+Либо можно использовать настоящий ящик
+```
+export MAIL_SERVER=smtp.googlemail.com
+export MAIL_PORT=587
+export MAIL_USE_TLS=1
+export MAIL_USERNAME=<your-gmail-username>
+export MAIL_PASSWORD=<your-gmail-password>
+```
+
 ### Конфиги VS Code
 Анализатор - flake8
 Интерпретатор - выбрать тот что для виртуального окружения
