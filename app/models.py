@@ -1,8 +1,8 @@
 from datetime import datetime
+from hashlib import md5
 from app import db, login
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
-from hashlib import md5
 
 
 class User(UserMixin, db.Model):
@@ -13,7 +13,7 @@ class User(UserMixin, db.Model):
     posts = db.relationship('Post', backref='author', lazy='dynamic')
     about_me = db.Column(db.String(140))
     last_seen = db.Column(db.DateTime, default=datetime.utcnow)
-    
+
     def __repr__(self):
         return '<User {}>'.format(self.username)
 
