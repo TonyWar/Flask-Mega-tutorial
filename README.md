@@ -19,6 +19,14 @@ pip install flask
 ```
 pip install flask-wtf
 ```
+Установка SQLAlchemy
+```
+pip install flask-sqlalchemy
+```
+Установка flask-migrate
+```
+pip install flask-migrate
+```
 
 ### Запуск приложения
 1. Сообщаем FLASK как импортировать приложение
@@ -29,3 +37,23 @@ export FLASK_APP=manage.py
 ```
 flask run
 ```
+
+### Конфиги VS Code
+Анализатор - flake8
+Интерпретатор - выбрать тот что для виртуального окружения
+
+### Работа с Alchemy
+Создание репозитория миграций:
+```
+flask db init
+```
+Миграция баз данныз:
+```
+flask db migrate -m "users table"
+flask db migrate -m "posts table"
+```
+Применение изменений:
+```
+flask db upgrade
+```
+
