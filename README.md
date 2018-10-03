@@ -15,6 +15,10 @@ source venv/bin/activate
 ```
 pip install flask
 ```
+Установка Flask WTF - для работы с WTF Forms
+```
+pip install flask-wtf
+```
 
 ### Запуск приложения
 1. Сообщаем FLASK как импортировать приложение
