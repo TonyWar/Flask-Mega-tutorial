@@ -39,6 +39,10 @@ pip install flask-mail
 ```
 pip install pyjwt
 ```
+Установка bootstrap
+```
+pip install flask-bootstrap
+```
 
 ### Запуск приложения
 1. Сообщаем FLASK как импортировать приложение
