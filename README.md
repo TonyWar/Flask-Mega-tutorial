@@ -31,6 +31,14 @@ pip install flask-migrate
 ```
 pip install flask-login
 ```
+Установка flask-mail для отправки сообщений
+```
+pip install flask-mail
+```
+Добавление JWT (Json Web Tokens)
+```
+pip install pyjwt
+```
 
 ### Запуск приложения
 1. Сообщаем FLASK как импортировать приложение
