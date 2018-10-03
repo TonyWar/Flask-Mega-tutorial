@@ -27,6 +27,10 @@ pip install flask-sqlalchemy
 ```
 pip install flask-migrate
 ```
+Установка flask-login - для хранения сессий
+```
+pip install flask-login
+```
 
 ### Запуск приложения
 1. Сообщаем FLASK как импортировать приложение
