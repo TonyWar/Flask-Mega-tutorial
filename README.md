@@ -50,6 +50,7 @@ flask db init
 Миграция баз данныз:
 ```
 flask db migrate -m "users table"
+flask db migrate -m "posts table"
 ```
 Применение изменений:
 ```
