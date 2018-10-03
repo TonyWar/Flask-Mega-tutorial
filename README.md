@@ -79,3 +79,8 @@ flask db migrate -m "posts table"
 flask db upgrade
 ```
 
+### Тестирование
+Запуск тестов:
+```
+python tests.py
+```
