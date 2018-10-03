@@ -14,4 +14,4 @@ login = LoginManager(app)
 login.login_view = 'login'
 
 # Импорт в конце чтобы избежать циклического импорта
-from app import routes, models
+from app import routes, models, errors
