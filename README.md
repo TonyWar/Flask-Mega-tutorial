@@ -43,6 +43,10 @@ pip install pyjwt
 ```
 pip install flask-bootstrap
 ```
+Установка moment
+```
+pip install flask-moment
+```
 
 ### Запуск приложения
 1. Сообщаем FLASK как импортировать приложение
