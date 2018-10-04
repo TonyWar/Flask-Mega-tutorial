@@ -47,6 +47,10 @@ pip install flask-bootstrap
 ```
 pip install flask-moment
 ```
+Установка Flask-Babel - для переводов
+```
+pip install flask-babel
+```
 
 ### Запуск приложения
 1. Сообщаем FLASK как импортировать приложение
