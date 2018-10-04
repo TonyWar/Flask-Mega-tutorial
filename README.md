@@ -118,3 +118,14 @@ pybabel init -i messages.pot -d app/translations -l es
 ```
 pybabel compile -d app/translations
 ```
+
+Обновление переводов
+```
+pybabel extract -f babel.cfg -k _l -o messages.pot .
+pybabel update -i messages.pot -d app/translations
+```
+
+### Добавленные команды для командной строки (cli.py)
+```flask translate init``` LANG добавить новый язык
+```flask translate update``` обновить все языковые репозитории
+```flask translate compile``` для компиляции всех языковых репозиторие
