@@ -104,3 +104,17 @@ flask db upgrade
 ```
 python tests.py
 ```
+
+### Работа с переводами
+Извлечение всех текстов в .pot файл
+```
+pybabel extract -F babel.cfg -k _l -o messages.pot .
+```
+Добавление языка (на примере испанского)
+```
+pybabel init -i messages.pot -d app/translations -l es
+```
+Компилируем переводы
+```
+pybabel compile -d app/translations
+```
