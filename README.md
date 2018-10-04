@@ -51,6 +51,14 @@ pip install flask-moment
 ```
 pip install flask-babel
 ```
+###Поддержка env файлов
+```
+pip install python-dotenv
+```
+Сохранить список зависимостей
+```pip freeze > requirements.txt```
+Установить список зависимостей
+```pip install -r requirements.txt```
 
 ### Запуск приложения
 1. Сообщаем FLASK как импортировать приложение
