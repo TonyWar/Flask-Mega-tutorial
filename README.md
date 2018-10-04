@@ -47,6 +47,10 @@ pip install flask-bootstrap
 ```
 pip install flask-moment
 ```
+Установка Flask-Babel - для переводов
+```
+pip install flask-babel
+```
 
 ### Запуск приложения
 1. Сообщаем FLASK как импортировать приложение
@@ -100,3 +104,28 @@ flask db upgrade
 ```
 python tests.py
 ```
+
+### Работа с переводами
+Извлечение всех текстов в .pot файл
+```
+pybabel extract -F babel.cfg -k _l -o messages.pot .
+```
+Добавление языка (на примере испанского)
+```
+pybabel init -i messages.pot -d app/translations -l es
+```
+Компилируем переводы
+```
+pybabel compile -d app/translations
+```
+
+Обновление переводов
+```
+pybabel extract -f babel.cfg -k _l -o messages.pot .
+pybabel update -i messages.pot -d app/translations
+```
+
+### Добавленные команды для командной строки (cli.py)
+```flask translate init``` LANG добавить новый язык
+```flask translate update``` обновить все языковые репозитории
+```flask translate compile``` для компиляции всех языковых репозиторие
